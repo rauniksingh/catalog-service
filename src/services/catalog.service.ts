@@ -7,8 +7,14 @@ export class CatalogService {
 			this._repository = repository
 		}
 
-    createProduct(data: any) {
-
+    async createProduct(data: any) {
+			return {
+				id: 1,
+        name: "Sample",
+        description: "Sample",
+        price: 1,
+        stock: 1
+			}
     }
 
     updateProduct(data: any) {
